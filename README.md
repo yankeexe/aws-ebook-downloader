@@ -2,7 +2,7 @@
 
 Download eBooks from [AWS Resource Hub](https://resources.awscloud.com/) without filling forms :zap:
 
-## Usage /Demo Video
+## Usage/Demo Video
 
 Click the image below to see the Demo Video: :rocket:
 
