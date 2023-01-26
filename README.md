@@ -14,7 +14,7 @@ Click the image below to see the Demo Video: :rocket:
 
 ### Chrome
 
-1. Clone this repository
+1. Clone this repository or Download the [latest relaese](https://github.com/yankeexe/aws-ebook-downloader/releases/latest).
 2. Using Chromium based browser, navigate to:
    - Chrome: `chrome://extensions`
    - Brave: `brave://extensions`
