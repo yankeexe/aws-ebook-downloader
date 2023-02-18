@@ -24,8 +24,8 @@ release_chrome() {
 release_firefox() {
     copy_action $FIREFOX_DIRECTORY
     pwd
-    sed -i '' 's/chrome/browser/g' "content-script.js"
-    sed -i '' 's/chrome/browser/g' "popup.js"
+    sed -i 's/chrome/browser/g' "content-script.js"
+    sed -i 's/chrome/browser/g' "popup.js"
     7z a -tzip -mx9 ../$FIREFOX_DIRECTORY.zip *
     cd .. && rm -rf $FIREFOX_DIRECTORY
 }
