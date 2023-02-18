@@ -1,0 +1,22 @@
+{
+    "name": "AWS Ebook Downloader",
+    "description": "Download ebooks from AWS Resource Hub without filling forms",
+    "version": "0.1",
+    "author": "Yankee Maharjan",
+    "manifest_version": 2,
+    "permissions": ["activeTab", "storage"],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://resources.awscloud.com/*"],
+            "js": ["content-script.js"]
+        }
+    ]
+}
