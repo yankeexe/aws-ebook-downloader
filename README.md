@@ -28,7 +28,7 @@ Click the image below to see the Demo Video: :rocket:
 
 1. Clone this repository or Download the [latest relaese](https://github.com/yankeexe/aws-ebook-downloader/releases/latest).
 2. Go to `about:debugging`
-3. Choose on "This Firefox"
+3. Choose "This Firefox"
 4. Select "Load Temporary Add-on"
 5. Select the Firefox Directory
 6. Download any AWS pdf resources from the [Resource Hub](https://resources.awscloud.com/) :zap:
