@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-CHROME_DIRECTORY="12_ft_chrome"
-FIREFOX_DIRECTORY="12_ft_firefox"
+CHROME_DIRECTORY="aws_ebook_downloader_chrome"
+FIREFOX_DIRECTORY="aws_ebook_downloader_firefox"
 
 copy_action() {
     mkdir "$1"
