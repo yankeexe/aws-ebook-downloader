@@ -3,15 +3,16 @@ on:
   push:
     tags:
       - "*"
-permissions:
-  contents: write
 jobs:
   release:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     runs-on: ubuntu-latest
-    name: "Create GH Release"
+    permissions: write-all
+    name: Create GH Release
     steps:
       - uses: actions/checkout@v3
+      - name: Build Artifacts
+        run: ./release.sh
       - name: Create Release
-        run: gh release create ${GITHUB_REF#refs/*/} -t ${GITHUB_REF#refs/*/} --generate-notes
+        run: gh release create ${GITHUB_REF#refs/*/} -t ${GITHUB_REF#refs/*/} aws_ebook_downloader_chrome.zip aws_ebook_downloader_firefox.zip --generate-notes
