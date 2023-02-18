@@ -7,6 +7,7 @@ jobs:
   release:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      APP_NAME: aws_ebook_downloader
     runs-on: ubuntu-latest
     permissions: write-all
     name: Create GH Release
@@ -15,4 +16,4 @@ jobs:
       - name: Build Artifacts
         run: ./release.sh
       - name: Create Release
-        run: gh release create ${GITHUB_REF#refs/*/} -t ${GITHUB_REF#refs/*/} aws_ebook_downloader_chrome.zip aws_ebook_downloader_firefox.zip --generate-notes
+        run: gh release create ${GITHUB_REF#refs/*/} -t ${GITHUB_REF#refs/*/} $APP_NAME_chrome.zip $APP_NAME_firefox.zip --generate-notes
