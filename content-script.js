@@ -1,7 +1,8 @@
-const download = document.querySelector(".download-pdf")
-if (download == null) {
+const iframe = document.querySelector("#uf-flipbook iframe")
+
+if (iframe == null) {
   chrome.storage.local.set({ url: null })
 } else {
-  let downloadURL = download.getAttribute("href")
-  chrome.storage.local.set({ url: downloadURL })
+  let iframeSrc = iframe.src
+  chrome.storage.local.set({ awsEbookUrl: iframeSrc })
 }
